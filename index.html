@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#06152f" />
+  <meta name="description" content="Pharmas Sağlık Ürünleri - Magnesium Duodenal ile sağlığınıza değer katıyoruz." />
+  <title>Pharmas Sağlık Ürünleri | Magnesium Duodenal</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,500;0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS Animate on Scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/premium.css" />
+</head>
+<body class="pharmas-premium">
+
+  <!-- ========== NAVBAR ========== -->
+  <header id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="logo">
+        <img src="images/logo.jpg" alt="Pharmas" class="logo-img" />
+      </a>
+
+      <nav class="nav-links">
+        <div class="nav-dropdown">
+          <button class="nav-dd-trigger">Ürün <i class="fa-solid fa-chevron-down"></i></button>
+          <div class="nav-dd-menu">
+            <a href="#" onclick="openProdView('urun'); return false;"><i class="fa-solid fa-capsules"></i> Magnesium Duodenal</a>
+            <a href="#" onclick="openProdView('ozellikler'); return false;"><i class="fa-solid fa-star"></i> Faydaları</a>
+            <a href="#" onclick="openProdView('icerik-detay'); return false;"><i class="fa-solid fa-flask-vial"></i> İçerik Detayı</a>
+            <a href="#" onclick="openProdView('drcaps'); return false;"><i class="fa-solid fa-seedling"></i> DRcaps Teknoloji</a>
+            <a href="#" onclick="openProdView('karsilastirma'); return false;"><i class="fa-solid fa-table-list"></i> Karşılaştırma</a>
+            <a href="#" onclick="openProdView('sertifikalar'); return false;"><i class="fa-solid fa-award"></i> Sertifikalar</a>
+          </div>
+        </div>
+        <a href="#hakkimizda">Hakkımızda</a>
+        <a href="#yorumlar">Yorumlar</a>
+        <a href="#sss">SSS</a>
+        <a href="#satin-al" class="btn-nav-buy">Satın Al</a>
+        <a href="#iletisim" class="btn-nav">İletişim</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" id="mobileMenu">
+      <span class="mobile-group-label">— Ürün —</span>
+      <a href="#" onclick="openProdView('urun'); return false;" class="mobile-link mobile-sub">Magnesium Duodenal</a>
+      <a href="#" onclick="openProdView('ozellikler'); return false;" class="mobile-link mobile-sub">Faydaları</a>
+      <a href="#" onclick="openProdView('icerik-detay'); return false;" class="mobile-link mobile-sub">İçerik Detayı</a>
+      <a href="#" onclick="openProdView('drcaps'); return false;" class="mobile-link mobile-sub">DRcaps Teknoloji</a>
+      <a href="#" onclick="openProdView('karsilastirma'); return false;" class="mobile-link mobile-sub">Karşılaştırma</a>
+      <a href="#" onclick="openProdView('sertifikalar'); return false;" class="mobile-link mobile-sub">Sertifikalar</a>
+      <a href="#hakkimizda" class="mobile-link">Hakkımızda</a>
+      <a href="#yorumlar" class="mobile-link">Yorumlar</a>
+      <a href="#sss" class="mobile-link">SSS</a>
+      <a href="#satin-al" class="mobile-link mobile-link-cta">Satın Al</a>
+      <a href="#iletisim" class="mobile-link">İletişim</a>
+    </nav>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-particles" id="particles"></div>
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-text" data-aos="fade-right" data-aos-duration="900">
+        <span class="badge">Yeni Nesil Magnezyum Takviyesi</span>
+        <h1>Magnesium<br /><span class="highlight" style="color:#F27A1A !important;">Duodenal</span></h1>
+        <p class="hero-sub">
+          Duodenal salınım teknolojisiyle maksimum emilim. Stres, yorgunluk ve
+          kas sağlığınız için bilimsel formül.
+        </p>
+        <div class="hero-actions">
+          <a href="#satin-al" class="btn-primary" onclick="document.getElementById('satin-al').scrollIntoView({behavior:'smooth'}); return false;">
+            <i class="fa-solid fa-bag-shopping"></i> Satın Al
+          </a>
+          <a href="#" onclick="openProdView('urun'); return false;" class="btn-secondary-outline">
+            <i class="fa-solid fa-circle-info"></i> Ürünü İncele
+          </a>
+        </div>
+        <div class="hero-proof-grid" aria-label="Ürün özellikleri">
+          <div class="hero-proof-item">
+            <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+            <strong>5 Aktif Form</strong>
+            <span>Birbirini tamamlayan magnezyum kompleksi</span>
+          </div>
+          <div class="hero-proof-item">
+            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+            <strong>DRcaps® Teknolojisi</strong>
+            <span>Bitkisel ve gecikmeli salınımlı kapsül</span>
+          </div>
+          <div class="hero-proof-item">
+            <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+            <strong>90 Kapsül</strong>
+            <span>Günde 1 kapsül ile kullanım kolaylığı</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image" data-aos="fade-left" data-aos-duration="900" data-aos-delay="200">
+        <div class="product-glow"></div>
+        <span class="hero-number" aria-hidden="true">5</span>
+        <img src="images/duadenal-2.avif" alt="Magnesium Duodenal Ürünü" class="product-img" fetchpriority="high" />
+        <div class="hero-float hero-float--one">
+          <i class="fa-solid fa-capsules" aria-hidden="true"></i>
+          <div><strong>190 mg Magnezyum</strong><small>Her kapsülde</small></div>
+        </div>
+        <div class="hero-float hero-float--two">
+          <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+          <div><strong>Bitkisel Kapsül</strong><small>DRcaps® teknolojisi</small></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f8fafc"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ========== TRUST BAR ========== -->
+  <section id="trust-bar">
+    <div class="container">
+      <div class="cert-strip-visual" data-aos="fade-up">
+        <div class="csv-item">
+          <img src="images/certs/helal.svg" alt="Helal" class="csv-img" />
+          <span class="csv-name">Helal</span>
+          <span class="csv-sub">Sertifikalı</span>
+        </div>
+        <div class="csv-item">
+          <img src="images/certs/iso-9001.svg" alt="ISO 9001" class="csv-img" />
+          <span class="csv-name">ISO 9001</span>
+          <span class="csv-sub">Kalite Yönetim</span>
+        </div>
+        <div class="csv-item">
+          <img src="images/certs/iso-14001.svg" alt="ISO 14001" class="csv-img" />
+          <span class="csv-name">ISO 14001</span>
+          <span class="csv-sub">Çevre Yönetim</span>
+        </div>
+        <div class="csv-item">
+          <img src="images/certs/iso-22000.svg" alt="ISO 22000" class="csv-img" />
+          <span class="csv-name">ISO 22000</span>
+          <span class="csv-sub">Gıda Güvenliği</span>
+        </div>
+        <div class="csv-item">
+          <img src="images/certs/vegan.svg" alt="Vegan" class="csv-img" />
+          <span class="csv-name">Vegan</span>
+          <span class="csv-sub">Bitkisel İçerik</span>
+        </div>
+        <div class="csv-item">
+          <div class="csv-icon-wrap"><i class="fa-solid fa-seedling"></i></div>
+          <span class="csv-name">Gluten Free</span>
+          <span class="csv-sub">İçermez</span>
+        </div>
+        <div class="csv-item">
+          <div class="csv-icon-wrap"><i class="fa-solid fa-droplet-slash"></i></div>
+          <span class="csv-name">Laktoz Free</span>
+          <span class="csv-sub">İçermez</span>
+        </div>
+        <div class="csv-item">
+          <div class="csv-icon-wrap"><i class="fa-solid fa-headset"></i></div>
+          <span class="csv-name">Bilgi Hattı</span>
+          <span class="csv-sub">10:00–20:00</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ANA SAYFA FOTO SLIDER ========== -->
+  <section id="foto-galeri">
+    <div class="container">
+      <div class="fg-header">
+        <span class="section-badge">Ürün Görselleri</span>
+        <h2>Magnesium Duodenal 5</h2>
+        <p>5 Yıldızlı Magnezyum formülünü yakından tanıyın</p>
+      </div>
+    </div>
+    <div class="fg-slider-wrap">
+      <div class="fg-track" id="fgTrack">
+        <div class="fg-slide"><img src="images/slide2.jpeg" alt="Magnesium Duodenal - Görsel 1" loading="lazy" /></div>
+        <div class="fg-slide"><img src="images/slide3.jpeg" alt="Magnesium Duodenal - Görsel 2" loading="lazy" /></div>
+        <div class="fg-slide"><img src="images/slide4.jpeg" alt="Magnesium Duodenal - Görsel 3" loading="lazy" /></div>
+      </div>
+      <button class="fg-btn fg-prev" id="fgPrev" aria-label="Önceki"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="fg-btn fg-next" id="fgNext" aria-label="Sonraki"><i class="fa-solid fa-chevron-right"></i></button>
+      <div class="fg-dots" id="fgDots"></div>
+    </div>
+  </section>
+  <!-- ========== /ANA SAYFA FOTO SLIDER ========== -->
+
+
+
+  <!-- ========== PRODUCT SECTION ========== -->
+  
+
+  <!-- ========== PHOTO GALLERY SLIDER ========== -->
+  
+
+  <!-- ========== FEATURES / BENEFITS ========== -->
+  
+
+  <!-- ========== INGREDIENT DETAIL CARDS ========== -->
+  
+
+  <!-- ========== SCIENTIFIC REFERENCES ========== -->
+  
+
+  <!-- ========== DRCAPS TECHNOLOGY ========== -->
+  
+
+  <!-- ========== COMPARISON TABLE ========== -->
+  
+
+  <!-- ========== CERTIFICATIONS ========== -->
+  
+
+  <!-- ========== SİPARİŞ CTA BANNER ========== -->
+  
+
+  <!-- ========== HOW IT WORKS ========== -->
+  <section id="nasil-calisir">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Kullanım Rehberi</span>
+        <h2>Nasıl Kullanılır?</h2>
+        <p>Maksimum fayda için önerilen kullanım şekli</p>
+      </div>
+      <div class="steps-row steps-row--single" data-aos="fade-up">
+        <div class="step-card step-card--wide">
+          <div class="step-num"><i class="fa-solid fa-capsules" style="color:#3DAA70;font-size:2.5rem;"></i></div>
+          <h4>Kullanım Önerisi</h4>
+          <p>Günde 1 veya 2 kapsül olarak <strong>tok karına</strong> tüketilmesi tavsiye olunur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="hakkimizda">
+    <div class="container about-grid">
+      <div class="about-image-wrap" data-aos="fade-right" data-aos-duration="800">
+        <div class="about-img-bg"></div>
+        <img src="images/gorselbir.png" alt="Pharmas Sağlık" class="about-img" />
+        <div class="about-badge-float">
+          <i class="fa-solid fa-award"></i>
+          <div>
+            <strong>Kalite Güvencesi</strong>
+            <span>GMP Sertifikalı</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content" data-aos="fade-left" data-aos-duration="800" data-aos-delay="150">
+        <span class="section-badge">Hakkımızda</span>
+        <h2>Sağlığınıza Değer Katmak İçin Çalışıyoruz</h2>
+        <p>
+          Pharmas Sağlık Ürünleri olarak, insanların daha sağlıklı ve kaliteli bir yaşam
+          sürmelerine katkıda bulunmak için kurulduk. Ar-Ge odaklı yaklaşımımızla
+          bilimsel araştırmaları ürüne dönüştürüyor, her bireyin sağlık ihtiyacına
+          özel çözümler sunuyoruz.
+        </p>
+        <p>
+          Magnesium Duodenal, yıllar süren araştırma ve geliştirme çalışmalarının
+          ürünüdür. Duodenal salınım teknolojisi, magnezyumun vücuda en etkin şekilde
+          aktarılmasını sağlayan özel bir formüldür.
+        </p>
+        <div class="about-values">
+          <div class="value-item">
+            <i class="fa-solid fa-microscope"></i>
+            <div>
+              <strong>Bilim Odaklı</strong>
+              <span>Klinik çalışmalar ile desteklenen bilimsel kökenli ve kalite odaklı içerikler.</span>
+            </div>
+          </div>
+          <div class="value-item">
+            <i class="fa-solid fa-leaf"></i>
+            <div>
+              <strong>İçermediklerimiz</strong>
+              <span>Günümüz dünyasında ambalaja girmiş tüm ürünlerin içerdikleri kadar içermedikleri de önem arz etmektedir. Topak önleyici, renklendirici, tatlandırıcı, TiO₂ ve SiO₂ içermeyen Clean Label formül.</span>
+            </div>
+          </div>
+          <div class="value-item">
+            <i class="fa-solid fa-handshake"></i>
+            <div>
+              <strong>Güven</strong>
+              <span>Şeffaf üretim, dürüst iletişim</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== WHY US ========== -->
+  <section id="neden-biz">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Neden Pharmas?</span>
+        <h2>Farkımız Nedir?</h2>
+        <p>Kalite, güven ve bilim bir arada.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card" data-aos="zoom-in" data-aos-delay="0">
+          <i class="fa-solid fa-flask-vial"></i>
+          <h4>Gelişmiş Formülasyon</h4>
+          <p>Standart magnezyum takviyelerinden farklı olarak, duodenal salınım teknolojisi ile formüle edilmiştir.</p>
+        </div>
+        <div class="why-card" data-aos="zoom-in" data-aos-delay="100">
+          <i class="fa-solid fa-building-columns"></i>
+          <h4>Lisanslı Üretim</h4>
+          <p>Bakanlık onaylı, GMP sertifikalı tesislerde üretilmektedir. Her parti kalite kontrolünden geçer.</p>
+        </div>
+        <div class="why-card" data-aos="zoom-in" data-aos-delay="200">
+          <i class="fa-solid fa-user-doctor"></i>
+          <h4>Uzman Danışmanlığı</h4>
+          <p>Ürün geliştirme sürecinde uzman eczacı ve hekimlerden destek alınmıştır.</p>
+        </div>
+        <div class="why-card" data-aos="zoom-in" data-aos-delay="300">
+          <i class="fa-solid fa-truck-fast"></i>
+          <h4>Hızlı Teslimat</h4>
+          <p>Siparişleriniz özenle paketlenerek en kısa sürede kapınıza teslim edilir.</p>
+        </div>
+        <div class="why-card" data-aos="zoom-in" data-aos-delay="400">
+          <i class="fa-solid fa-rotate-left"></i>
+          <h4>Memnuniyet Garantisi</h4>
+          <p>Yüksek kullanıcı uyumu ve müşteri memnuniyeti.</p>
+        </div>
+        <div class="why-card" data-aos="zoom-in" data-aos-delay="500">
+          <i class="fa-solid fa-comments"></i>
+          <h4>Destek Hattı</h4>
+          <p>WhatsApp bilgi hattımız ve e-posta üzerinden sorularınızı yanıtlayan uzman ekibimiz her zaman yanınızda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CUSTOMER REVIEWS ========== -->
+  <section id="yorumlar">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Müşteri Yorumları</span>
+        <h2>Kullanıcılar Ne Diyor?</h2>
+        <p>Magnesium Duodenal 5 kullananların gerçek deneyimleri.</p>
+      </div>
+      <div class="reviews-grid">
+
+        <div class="review-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"3 haftadır kullanıyorum, uyku kalitem gözle görülür biçimde arttı. Sabahları çok daha dinç kalkıyorum. Önceki magnezyumlarda yaşadığım mide rahatsızlığını hiç yaşamadım."</p>
+          <div class="review-author">
+            <div class="review-avatar">AK</div>
+            <div class="review-info">
+              <strong>Ahmet K.</strong>
+              <span>İstanbul · Doğrulanmış Alıcı</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Yoğun tempom nedeniyle çok stres yaşıyordum. İki hafta içinde kendimi daha sakin hissettim. Odaklanma ve konsantrasyon da belirgin şekilde iyileşti."</p>
+          <div class="review-author">
+            <div class="review-avatar">ST</div>
+            <div class="review-info">
+              <strong>Selin T.</strong>
+              <span>Ankara · Doğrulanmış Alıcı</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Düzenli spor yapıyorum ve antrenman sonrası kas ağrılarım çok azaldı. Toparlanma sürem kısaldı, performansım arttı. Kesinlikle devam edeceğim."</p>
+          <div class="review-author">
+            <div class="review-avatar">MY</div>
+            <div class="review-info">
+              <strong>Murat Y.</strong>
+              <span>İzmir · Doğrulanmış Alıcı</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="review-stars">★★★★<span style="color:var(--border);">★</span></div>
+          <p class="review-text">"Migren ataklarım ciddi ölçüde azaldı. Ayda 4-5 olan atak sayısı 1'e düştü. Bitkisel kapsül olması da tercih sebebim oldu, gluten hassasiyetim var."</p>
+          <div class="review-author">
+            <div class="review-avatar">FO</div>
+            <div class="review-info">
+              <strong>Fatma Ö.</strong>
+              <span>İstanbul · Doğrulanmış Alıcı</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Kronik yorgunluk yaşıyordum. 90 kapsüllük 3 aylık paketi bitirdim, enerji seviyem bambaşka. Fiyat/performans açısından piyasada gördüğüm en iyi ürün."</p>
+          <div class="review-author">
+            <div class="review-avatar">KB</div>
+            <div class="review-info">
+              <strong>Kemal B.</strong>
+              <span>Bursa · Doğrulanmış Alıcı</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"PMS döneminde çok zorlanıyordum. B6 ve magnezyum kombinasyonu gerçekten fark yarattı. Hem ruh halim dengelendi hem de kas ağrıları azaldı. Teşekkürler."</p>
+          <div class="review-author">
+            <div class="review-avatar">ZA</div>
+            <div class="review-info">
+              <strong>Zeynep A.</strong>
+              <span>İstanbul · Doğrulanmış Alıcı</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SSS ========== -->
+  <section id="sss">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Sık Sorulan Sorular</span>
+        <h2>Merak Ettikleriniz</h2>
+        <p>Magnesium Duodenal 5 hakkında en çok sorulan sorular ve yanıtları.</p>
+      </div>
+      <div class="faq-list" data-aos="fade-up">
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>Günde kaç kapsül almalıyım ve ne zaman?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            <p>Günde 1 tok veya sabah akşam tok karına 1'er kapsül şeklinde kullanımı önerilir.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>Mide hassasiyetim var, kullanabilir miyim?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            <p>Evet. Capsugel® DRcaps® bitkisel kapsül teknolojisi sayesinde ürün mide ortamında çözünmez; bağırsakta ve yavaş salınır. Bu özelliği, mide hassasiyeti olan bireyler için özellikle avantajlıdır. Standart magnezyum tabletlerine kıyasla mide rahatsızlığı yaratma riski çok düşüktür ve yüksek emilim sağlar.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>DRcaps® nedir, normal kapsülden farkı ne?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            <p>DRcaps® (Delayed Release Capsules), Capsugel® tarafından üretilen bitkisel bazlı, bağırsakta çözünen özel kapsüllerdir. Kimyasal enterik film kaplama içermez; yapısal özellikleri sayesinde mide asidine doğal direnç gösterir. Böylece aktif maddeler midede bozulmadan ince bağırsakta serbest kalır ve emilim maksimum düzeye ulaşır.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>Diğer ilaçlar veya takviyelerle birlikte alınabilir mi?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            <p>Genel olarak güvenlidir; ancak düzenli ilaç kullananların hekimleriyle görüşmesi önerilir. Özellikle kan sulandırıcı, antibiyotik veya tiroid ilaçlarıyla birlikte kullanımda doktor tavsiyesi alınmalıdır.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>Ürün vegan ve helal mi?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            <p>Evet. Capsugel® DRcaps® kapsüller Vegetarian Society tarafından onaylı ve HPMC (bitkisel selüloz) bazlıdır. Ürün aynı zamanda IFANCA tarafından Helal sertifikalıdır. Hayvansal içerik, GDO, gluten ve laktoz içermez.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>90 kapsüllük paket kaç aylık kullanıma yeter?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            <p>90 kapsüllük paket, günde 1 kapsül kullanımıyla 3 aylık kullanıma karşılık gelir. Düzenli kullanım için hem ekonomik hem de pratik bir seçenektir.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>Ürün nasıl saklanmalıdır?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            <p>25°C'nin altında, serin ve kuru bir yerde, doğrudan güneş ışığından uzakta saklanmalıdır. Çocukların erişemeyeceği yerlerde muhafaza edilmelidir. Blister ambalaj sayesinde nem ve ışığa karşı ekstra koruma sağlanır.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>Ürünü nereden satın alabilirim?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            <p>Magnesium Duodenal 5'i bu web sitesi üzerinden veya Trendyol mağazamızdan temin edebilirsiniz.</p>
+            <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap;">
+              <a href="https://www.trendyol.com/magaza/pharmas-health-m-1272271" target="_blank" class="faq-btn faq-btn--trendyol"><i class="fa-solid fa-bag-shopping"></i> Trendyol'da Satın Al</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>Hamile veya emziren bireyler kullanabilir mi?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            <p>Hamilelik ve emzirme döneminde herhangi bir takviye kullanımına başlamadan önce doktor veya eczacınıza danışmanız önerilir. Ürün kullanımının uygun olup olmadığına sağlık uzmanınız karar verebilir.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>Çocuklar kullanabilir mi?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            <p>11 yaştan itibaren günde 1 kapsül tok karnına kullanılabilir.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>Ne zaman sonuç almaya başlayabilirim?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            <p>Bireysel farklılıklar nedeniyle kesin bir süre belirtmek mümkün olmamakla birlikte, düzenli kullanım sürecinde uyku kalitesi ve genel rahatlık üzerinde olumlu değişiklikler hissedilebilir. Destekleyici etkinin belirginleşmesi için düzenli ve sürekli kullanım önerilir.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>Ürünün yan etkisi var mı?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            <p>DRcaps® bitkisel kapsül teknolojisi sayesinde mide dostu bir formülasyon sunulmaktadır. Önerilen dozun üzerinde tüketim sindirim sistemini olumsuz etkileyebilir. Herhangi bir rahatsızlık durumunda kullanımı bırakarak sağlık uzmanınıza başvurmanız önerilir.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>Kargo ve teslimat süreci nasıl işliyor?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            <p>Siparişleriniz özenle paketlenerek kargo firmasına teslim edilmektedir. Teslimat süreleri kargo firmasına ve bölgenize göre değişkenlik gösterebilir. Sipariş ve teslimat ile ilgili detaylı bilgi için WhatsApp bilgi hattımızdan veya iletişim formumuzdan bize ulaşabilirsiniz.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRICING / SATIN AL ========== -->
+  <section id="satin-al">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Fiyat &amp; Satın Al</span>
+        <h2>Size En Uygun Paketi Seçin</h2>
+        <p>Her iki paket de aynı premium formülü içerir — sadece süre değişir.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="pricing-new-badge"><i class="fa-solid fa-star"></i> Yeni Ürün</div>
+          <div class="pricing-top">
+            <span class="pricing-name">Başlangıç Paketi</span>
+            <div class="pricing-qty">30<span>DrCaps®</span></div>
+            <p class="pricing-duration">1 Aylık Kullanım</p>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> 30 bitkisel DRcaps® kapsül</li>
+            <li><i class="fa-solid fa-check"></i> 210 mg toplam elementel kapsül içeriği</li>
+            <li><i class="fa-solid fa-check"></i> 190 mg elementel magnezyum</li>
+            <li><i class="fa-solid fa-check"></i> 5 Aktif Magnezyum formu</li>
+            <li><i class="fa-solid fa-check"></i> B6 (P5P) + Çinko Pikolinat</li>
+            <li><i class="fa-solid fa-check"></i> Deneme ve başlangıç için ideal</li>
+          </ul>
+          <div class="pricing-soon-wrap">
+            <span class="pricing-soon-badge"><i class="fa-solid fa-clock"></i> Pek Yakında</span>
+            <p class="pricing-soon-note">Bu paket çok yakında satışa sunulacak.</p>
+          </div>
+        </div>
+
+<div class="pricing-card pricing-featured" data-aos="fade-up" data-aos-delay="150">
+          <div class="pricing-popular-badge">En Çok Tercih Edilen</div>
+          <div class="pricing-top">
+            <span class="pricing-name">Ekonomi Paketi</span>
+            <div class="pricing-qty">90<span>DrCaps®</span></div>
+            <div class="pricing-price">1.599 <span>TL</span></div>
+            <p class="pricing-duration">3 Aylık Kullanım</p>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> 90 bitkisel DRcaps® kapsül</li>
+            <li><i class="fa-solid fa-check"></i> 210 mg toplam elementel kapsül içeriği</li>
+            <li><i class="fa-solid fa-check"></i> 190 mg elementel magnezyum</li>
+            <li><i class="fa-solid fa-check"></i> 5 Aktif Magnezyum formu</li>
+            <li><i class="fa-solid fa-check"></i> B6 (P5P) + Çinko Pikolinat</li>
+            <li><i class="fa-solid fa-check"></i> Günde 1 kapsül ile Kullanım Kolaylığı</li>
+            <li><i class="fa-solid fa-star" style="color:#F0B429;"></i> <strong>En ekonomik seçenek</strong></li>
+          </ul>
+          <div class="pricing-consent" id="pricingConsent">
+            <label class="consent-item">
+              <input type="checkbox" onchange="checkPricingConsent()">
+              <span><a href="mesafeli-satis-sozlesmesi.html" target="_blank">Ön Bilgilendirme Formu</a>'nu okudum, anladım ve kabul ediyorum.</span>
+            </label>
+            <label class="consent-item">
+              <input type="checkbox" onchange="checkPricingConsent()">
+              <span><a href="mesafeli-satis-sozlesmesi.html" target="_blank">Mesafeli Satış Sözleşmesi</a>'ni okudum, anladım ve kabul ediyorum.</span>
+            </label>
+            <label class="consent-item">
+              <input type="checkbox" onchange="checkPricingConsent()">
+              <span>Sağlık ürünü niteliğindeki bu üründe ambalaj açıldığında cayma hakkı kullanılamayacağını ve <a href="teslimat-iade.html" target="_blank">iade kabul edilmeyeceğini</a> okudum ve kabul ediyorum.</span>
+            </label>
+            <label class="consent-item">
+              <input type="checkbox" onchange="checkPricingConsent()">
+              <span>Siparişi onayladığımda ödeme yükümlülüğü altına gireceğimi kabul ediyorum.</span>
+            </label>
+          </div>
+
+          <div class="pricing-ctas">
+            <a href="IYZICO_ODEME_LINKI_BURAYA" class="btn-iyzico" id="iyzicoBtn" target="_blank">
+              <svg width="20" height="20" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="white"/><text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" font-size="10" font-weight="800" fill="#1a1aff">iyzico</text></svg>
+              Kredi Kartı ile Öde
+            </a>
+
+            <a href="https://www.trendyol.com/magaza/pharmas-health-m-1272271?channelId=1&sst=0&sk=1" class="btn-trendyol" target="_blank">
+              <i class="fa-solid fa-bag-shopping"></i> Trendyol
+            </a>
+          </div>
+          <div class="payment-badges">
+            <img src="https://www.iyzico.com/assets/images/trust-badge/iyzico-ile-ode-beyaz.png" alt="iyzico güvenli ödeme" onerror="this.style.display='none'" />
+            <div class="card-logos">
+              <span><i class="fa-brands fa-cc-visa"></i></span>
+              <span><i class="fa-brands fa-cc-mastercard"></i></span>
+              <span class="card-troy">TROY</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- ========== QUICK ORDER STRIP ========== -->
+  <div class="order-strip">
+    <div class="container order-strip-inner">
+      <p><i class="fa-solid fa-bolt"></i> Hemen sipariş vermek ister misiniz?</p>
+      <div class="order-strip-btns">
+        <a href="https://www.trendyol.com/magaza/pharmas-health-m-1272271?channelId=1&sst=0&sk=1" class="strip-btn-ty" target="_blank">
+          <i class="fa-solid fa-bag-shopping"></i> Trendyol'dan Satın Al
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="iletisim">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">İletişim</span>
+        <h2>Bizimle İletişime Geçin</h2>
+        <p>Ürünlerimiz veya sipariş hakkında her türlü sorunuz için buradayız.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right" data-aos-duration="800">
+          <div class="contact-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Adres</strong>
+              <span>Küçükbakkalköy Mah. Selvili Sok. No:4 İç Kapı No:20<br />Ataşehir / İstanbul</span>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <strong>Telefon / WhatsApp</strong>
+              <a href="tel:+905332595815">+90 533 259 58 15</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <strong>E-posta</strong>
+              <a href="mailto:info@pharmashealth.com">info@pharmashealth.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <strong>Çalışma Saatleri</strong>
+              <span>Pazartesi – Cuma: 10:00 – 20:00</span>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <i class="fa-solid fa-bag-shopping" style="color:#F27A1A"></i>
+            <div>
+              <strong>Trendyol'da Alışveriş</strong>
+              <a href="https://www.trendyol.com/magaza/pharmas-health-m-1272271?channelId=1&sst=0&sk=1" target="_blank" style="color:#F27A1A;font-weight:600;">Mağazamızı Ziyaret Edin →</a>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://wa.me/905332595815" class="social-btn whatsapp" aria-label="WhatsApp" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.trendyol.com/magaza/pharmas-health-m-1272271?channelId=1&sst=0&sk=1" class="social-btn trendyol" aria-label="Trendyol" target="_blank">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+            <a href="#" class="social-btn instagram" aria-label="Instagram" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="social-btn facebook" aria-label="Facebook" target="_blank">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap" data-aos="fade-left" data-aos-duration="800" data-aos-delay="150">
+          <form id="contactForm" class="contact-form">
+            <!-- Web3Forms Key -->
+            <input type="hidden" name="access_key" value="be67b931-d82f-4596-b0d4-cadf5e622979" />
+            <input type="hidden" name="subject" value="Pharmas Web Sitesi - Yeni Mesaj" />
+            <input type="hidden" name="from_name" value="Pharmas Web Sitesi" />
+            <input type="checkbox" name="botcheck" style="display:none;" />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Ad Soyad</label>
+                <input type="text" id="name" name="name" placeholder="Adınız Soyadınız" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Telefon</label>
+                <input type="tel" id="phone" name="phone" placeholder="+90 5XX XXX XX XX" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">E-posta</label>
+              <input type="email" id="email" name="email" placeholder="ornek@mail.com" required />
+            </div>
+            <div class="form-group">
+              <label for="konu">Konu</label>
+              <select id="konu" name="konu">
+                <option value="">Konu Seçin</option>
+                <option value="Sipariş Bilgisi">Sipariş Bilgisi</option>
+                <option value="Ürün Hakkında">Ürün Hakkında</option>
+                <option value="Bayilik / İş Birliği">Bayilik / İş Birliği</option>
+                <option value="Diğer">Diğer</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Mesajınız</label>
+              <textarea id="message" name="message" rows="5" placeholder="Mesajınızı buraya yazın..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full" id="submitBtn">
+              <i class="fa-solid fa-paper-plane"></i> Mesaj Gönder
+            </button>
+            <p class="form-note" id="formNote"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#hero" class="logo logo-white">
+          <img src="images/logo.jpg" alt="Pharmas" class="logo-img logo-img-footer" />
+        </a>
+        <p>Pharmas Sağlık Ürünleri Sanayi Ticaret Limited Şirketi</p>
+        <p class="footer-tagline">Sağlığa değer katmak için özenle çalışıyoruz.</p>
+      </div>
+
+      <div class="footer-links">
+        <h5>Hızlı Bağlantılar</h5>
+        <ul>
+          <li><a href="#urun">Ürünümüz</a></li>
+          <li><a href="#ozellikler">Faydaları</a></li>
+          <li><a href="#hakkimizda">Hakkımızda</a></li>
+          <li><a href="#neden-biz">Neden Biz?</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h5>Ürün</h5>
+        <ul>
+          <li><a href="#urun">Magnesium Duodenal</a></li>
+          <li><a href="#ozellikler">Kullanım Rehberi</a></li>
+          <li><a href="#nasil-calisir">Nasıl Çalışır?</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h5>İletişim</h5>
+        <p><i class="fa-solid fa-phone"></i> <a href="tel:+905332595815">+90 533 259 58 15</a></p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:info@pharmashealth.com">info@pharmashealth.com</a></p>
+        <p><i class="fa-solid fa-location-dot"></i> Ataşehir / İstanbul</p>
+        <div class="footer-social">
+          <a href="https://wa.me/905332595815" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.trendyol.com/magaza/pharmas-health-m-1272271?channelId=1&sst=0&sk=1" target="_blank" aria-label="Trendyol"><i class="fa-solid fa-bag-shopping"></i></a>
+          <a href="#" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 Pharmas Sağlık Ürünleri Sanayi Ticaret Ltd. Şti. Tüm hakları saklıdır.</p>
+        <div class="footer-legal">
+          <a href="gizlilik-kvkk.html">Gizlilik &amp; KVKK</a>
+          <a href="mesafeli-satis-sozlesmesi.html">Mesafeli Satış</a>
+          <a href="teslimat-iade.html">Teslimat &amp; İade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Buttons -->
+  <div class="float-group">
+    <a href="https://www.trendyol.com/magaza/pharmas-health-m-1272271?channelId=1&sst=0&sk=1" class="trendyol-float" target="_blank" aria-label="Trendyol'da satın al">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <span class="float-label">Trendyol</span>
+    </a>
+    <a href="https://wa.me/905332595815?text=Merhaba,%20Magnesium%20Duodenal%20sipari%C5%9F%20vermek%20istiyorum." class="whatsapp-float" target="_blank" aria-label="WhatsApp Bilgi Hattı">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="float-label">Sipariş</span>
+    </a>
+  </div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Yukarı çık">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+
+  <!-- ========== KVKK BANNER ========== -->
+  <div class="kvkk-banner" id="kvkkBanner">
+    <div class="kvkk-inner">
+      <div class="kvkk-text">
+        <i class="fa-solid fa-cookie-bite"></i>
+        <p>Bu web sitesi deneyiminizi geliştirmek için çerezler kullanır. <strong>KVKK</strong> kapsamında kişisel verileriniz işlenmektedir. <a href="#">Gizlilik Politikası</a></p>
+      </div>
+      <div class="kvkk-actions">
+        <button class="kvkk-accept" id="kvkkAccept">Kabul Et</button>
+        <button class="kvkk-reject" id="kvkkReject">Reddet</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- AOS & Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/premium.js"></script>
+
+<!-- ========== PRODUCT VIEW PANELS ========== -->
+<div class="pview-backdrop" id="pviewBackdrop" onclick="closeProdView()"></div>
+
+<div class="pview" id="pview-urun" role="region" aria-label="Magnesium Duodenal">
+  <div class="pview-topbar">
+    <div class="pview-topbar-left">
+      <button class="pview-back" onclick="closeProdView()" aria-label="Geri dön">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Geri</span>
+      </button>
+      <span class="pview-breadcrumb">Pharmas Sağlık / <strong>Magnesium Duodenal</strong></span>
+    </div>
+    <button class="pview-close" onclick="closeProdView()" aria-label="Kapat">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div class="pview-body">
+    <div class="container">
+      <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Öne Çıkan Ürün</span>
+        <h2>Magnesium Duodenal</h2>
+        <p>Duodenal salınım teknolojisiyle formüle edilmiş, yüksek biyoyararlanımlı magnezyum takviyesi.</p>
+      </div>
+
+      <div class="product-showcase">
+        <div class="product-images">
+          <div class="img-main-wrap">
+            <img src="images/gorseliki.png" alt="Magnesium Duodenal" class="img-main" id="mainProductImg" />
+          </div>
+          <div class="img-thumbs">
+            <img src="images/gorseliki.png" alt="Ürün görsel 1" class="thumb active" onclick="changeImg(this,'images/gorseliki.png')" />
+            <img src="images/gorselbir.png" alt="Ürün görsel 2" class="thumb" onclick="changeImg(this,'images/gorselbir.png')" />
+          </div>
+        </div>
+
+        <div class="product-details">
+          <div class="product-tag">210 mg Elementel Kapsül İçeriği</div>
+          <h3>Magnesium Duodenal</h3>
+          <p class="product-desc">
+            Özel duodenal salınım teknolojisi sayesinde magnezyum, ince bağırsakta en ideal
+            ortamda çözünerek maksimum oranda emilir. 210 mg elementel kapsül içeriği ile güçlü destek.
+          </p>
+
+          <div class="product-highlights">
+            <div class="ph-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>5 Aktif Mg. formu içeren güçlü formül — <strong>210 mg elementel kapsül içeriği</strong> (190 mg elementel magnezyum)</span>
+            </div>
+            <div class="ph-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Aktif <strong>B6 Vitamini (P5P)</strong> ve <strong>Çinko Pikolinat</strong> ile güçlendirilmiş formül</span>
+            </div>
+            <div class="ph-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Bağırsakta çözünen bitkisel <strong>DRcaps® kapsül</strong> teknolojisi — yüksek emilim, düşük yan etki, mide asidine çok yüksek direnç</span>
+            </div>
+            <div class="ph-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Renklendirici, tatlandırıcı, koruyucu, şeker, gluten ve laktoz <strong>içermez</strong></span>
+            </div>
+            <div class="ph-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span><strong>90 DrCaps</strong> kapsül — günde 1 kullanım ile 3 aylık bütçe dostu kullanım kolaylığı</span>
+            </div>
+          </div>
+
+          <div class="product-certs">
+            <span class="cert-badge"><i class="fa-solid fa-leaf"></i> Glutensiz</span>
+            <span class="cert-badge"><i class="fa-solid fa-droplet-slash"></i> Şekersiz</span>
+            <span class="cert-badge"><i class="fa-solid fa-award"></i> GMP</span>
+            <span class="cert-badge"><i class="fa-solid fa-vial"></i> Lab Onaylı</span>
+            <span class="cert-badge"><i class="fa-solid fa-capsules"></i> DrCaps®</span>
+            <span class="cert-badge"><i class="fa-solid fa-star"></i> Helal</span>
+          </div>
+
+          <div class="ingredient-table">
+            <div class="ingredient-table-title">
+              <i class="fa-solid fa-flask-vial"></i>
+              İçerik Bilgisi
+              <span>(1 kapsül başına)</span>
+            </div>
+            <table class="ing-table">
+              <tr><td>Magnezyum Bisglisinat</td><td>130 mg</td></tr>
+              <tr><td>Magnezyum L-Treonat</td><td>30 mg</td></tr>
+              <tr><td>Magnezyum Taurat</td><td>10 mg</td></tr>
+              <tr><td>Magnezyum Sitrat</td><td>10 mg</td></tr>
+              <tr><td>Magnezyum Malat</td><td>10 mg</td></tr>
+              <tr><td>B6 Vitamini (P5P)</td><td>10 mg</td></tr>
+              <tr><td>Çinko Pikolinat</td><td>10 mg</td></tr>
+              <tr class="ing-total"><td>Toplam Elementel Kapsül İçeriği</td><td>210 mg</td></tr>
+              <tr class="ing-total-sub"><td>— Toplam Elementel Magnezyum</td><td>190 mg</td></tr>
+            </table>
+          </div>
+
+          <div class="order-buttons">
+            <a href="https://www.trendyol.com/magaza/pharmas-health-m-1272271?channelId=1&sst=0&sk=1" class="btn-trendyol btn-lg" target="_blank">
+              <svg width="18" height="18" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#F27A1A"/><path d="M12 14h16l-2.5 10H14.5L12 14z" fill="white"/><path d="M15 12l1 4M25 12l-1 4" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Trendyol'da Satın Al
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="pview" id="pview-galeri" role="region" aria-label="Ürün Görselleri">
+  <div class="pview-topbar">
+    <div class="pview-topbar-left">
+      <button class="pview-back" onclick="closeProdView()" aria-label="Geri dön">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Geri</span>
+      </button>
+      <span class="pview-breadcrumb">Pharmas Sağlık / <strong>Ürün Görselleri</strong></span>
+    </div>
+    <button class="pview-close" onclick="closeProdView()" aria-label="Kapat">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div class="pview-body">
+    <div class="container">
+      <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Ürün Görselleri</span>
+        <h2>Magnesium Duodenal 5</h2>
+        <p>5 Yıldızlı Magnezyum formülünü yakından tanıyın</p>
+      </div>
+      <div class="gallery-slider">
+        <div class="slider-track" id="sliderTrack">
+          <div class="slide"><img src="images/slide2.jpeg" alt="Magnesium Duodenal 5 - Görsel 1" /></div>
+          <div class="slide"><img src="images/slide3.jpeg" alt="Magnesium Duodenal 5 - Görsel 2" /></div>
+          <div class="slide"><img src="images/slide4.jpeg" alt="Magnesium Duodenal 5 - Görsel 3" /></div>
+        </div>
+        <button class="slider-btn slider-prev" id="sliderPrev" aria-label="Önceki görsel">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="slider-btn slider-next" id="sliderNext" aria-label="Sonraki görsel">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <div class="slider-dots" id="sliderDots"></div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="pview" id="pview-ozellikler" role="region" aria-label="Faydaları">
+  <div class="pview-topbar">
+    <div class="pview-topbar-left">
+      <button class="pview-back" onclick="closeProdView()" aria-label="Geri dön">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Geri</span>
+      </button>
+      <span class="pview-breadcrumb">Pharmas Sağlık / <strong>Faydaları</strong></span>
+    </div>
+    <button class="pview-close" onclick="closeProdView()" aria-label="Kapat">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div class="pview-body">
+    <div class="container">
+      <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Bilimsel Faydaları</span>
+        <h2>Neden Magnesium Duodenal?</h2>
+        <p>Magnezyum, vücudun 300'den fazla biyokimyasal reaksiyonunda görev alır. Duodenal teknoloji farkıyla daha etkili.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon" style="--icon-color: #3DAA70;">
+            <i class="fa-solid fa-brain"></i>
+          </div>
+          <h4>Magnezyum & Stres Yönetimi</h4>
+          <p>Kortizol seviyelerinin dengelenmesine destek sağlayarak stres ve kaygı belirtilerinin hafiflemesine yardımcı olabilir. Zihinsel netliği desteklemeye katkı sağlar.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" style="--icon-color: #5B6EF5;">
+            <i class="fa-solid fa-moon"></i>
+          </div>
+          <h4>Magnezyum & Derin Uyku</h4>
+          <p>Melatonin üretiminin desteklenmesine katkı sağlayarak uyku döngüsünün düzenlenmesine yardımcı olabilir. Sabah daha dinç uyanmanıza destek sağlayabilir.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" style="--icon-color: #E8621A;">
+            <i class="fa-solid fa-dumbbell"></i>
+          </div>
+          <h4>Magnezyum & Kas Sağlığı</h4>
+          <p>Kas kasılmalarının düzenlenmesine destek sağlayarak kramp ve gerginliğin azalmasına yardımcı olabilir. Spor performansı ve toparlanma sürecine katkı sağlayabilir.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" style="--icon-color: #F0B429;">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <h4>Enerji & Metabolizma</h4>
+          <p>ATP sentezine katkı sağlayarak hücresel enerji üretiminin desteklenmesine yardımcı olabilir. Yorgunluk hissinin azalmasına katkı sağlayabilir.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" style="--icon-color: #E84D6D;">
+            <i class="fa-solid fa-heart-pulse"></i>
+          </div>
+          <h4>Kalp Sağlığı</h4>
+          <p>Kan basıncının normal düzeyde seyretmesine destek sağlayabilir. Kardiyovasküler sistem sağlığının korunmasına katkıda bulunabilir.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" style="--icon-color: #3DAA70;">
+            <i class="fa-solid fa-arrows-to-dot"></i>
+          </div>
+          <h4>Duodenal Salınım</h4>
+          <p>Özel DRcaps® teknolojisiyle ince bağırsakta çözünerek yüksek emilim oranına ulaşmayı hedefler. Mide hassasiyeti olan bireyler için uygun olabilir.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="pview" id="pview-icerik-detay" role="region" aria-label="İçerik Detayı">
+  <div class="pview-topbar">
+    <div class="pview-topbar-left">
+      <button class="pview-back" onclick="closeProdView()" aria-label="Geri dön">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Geri</span>
+      </button>
+      <span class="pview-breadcrumb">Pharmas Sağlık / <strong>İçerik Detayı</strong></span>
+    </div>
+    <button class="pview-close" onclick="closeProdView()" aria-label="Kapat">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div class="pview-body">
+    <div class="gida-uyari"><i class="fa-solid fa-triangle-exclamation"></i> GIDA TAKVİYELERİ İLAÇ DEĞİLDİR, İLAÇ YERİNE KULLANILMAZ!</div>
+
+    <div class="container">
+      <div class="container">
+      <div class="section-header">
+        <span class="section-badge">5 Aktif Mg. formu + 2 Güçlendirici</span>
+        <h2>Her İçeriğin Gücü</h2>
+        <p>Kartların üzerine gelin — her bileşenin vücudunuza özel katkısını keşfedin.</p>
+      </div>
+      <div class="flip-grid">
+
+        <div class="flip-card">
+          <div class="flip-front">
+            <div class="fc-icon" style="--fc-color:#3DAA70;"><i class="fa-solid fa-brain"></i></div>
+            <div class="fc-mg">130 mg</div>
+            <h4>Mg Bisglisinat</h4>
+            <p>Sinir sistemi &amp; uyku</p>
+            <span class="fc-hint"><i class="fa-solid fa-hand-pointer"></i> Detay</span>
+          </div>
+          <div class="flip-back" style="--fc-color:#3DAA70;">
+            <h4>Magnezyum Bisglisinat</h4>
+            <ul>
+              <li>Sinir sisteminin sakinleşmesine ve rahatlama sağlamaya destek olur</li>
+              <li>Derin uyku kalitesini desteklemeye ve gece kramplarının azalmasına katkı sağlar</li>
+              <li>Migren ataklarının hafiflemesine destek sağlayabilir</li>
+              <li>Organik yapısı sayesinde yüksek bağırsak emilimine olanak tanır</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-front">
+            <div class="fc-icon" style="--fc-color:#5B6EF5;"><i class="fa-solid fa-lightbulb"></i></div>
+            <div class="fc-mg">30 mg</div>
+            <h4>Mg L-Treonat</h4>
+            <p>Beyin &amp; hafıza</p>
+            <span class="fc-hint"><i class="fa-solid fa-hand-pointer"></i> Detay</span>
+          </div>
+          <div class="flip-back" style="--fc-color:#5B6EF5;">
+            <h4>Magnezyum L-Treonat</h4>
+            <ul>
+              <li>Kan-beyin bariyerini geçebilen nadir Mg formlarından biridir</li>
+              <li>Beyin içi Mg düzeyini artırarak öğrenme ve odaklanmayı destekler</li>
+              <li>Merkezi sinir sisteminin dengelenmesine katkı sağlar</li>
+              <li>Uyku geçişini kolaylaştırmaya destek olur</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-front">
+            <div class="fc-icon" style="--fc-color:#E84D6D;"><i class="fa-solid fa-heart-pulse"></i></div>
+            <div class="fc-mg">10 mg</div>
+            <h4>Mg Taurat</h4>
+            <p>Kalp &amp; kan basıncı</p>
+            <span class="fc-hint"><i class="fa-solid fa-hand-pointer"></i> Detay</span>
+          </div>
+          <div class="flip-back" style="--fc-color:#E84D6D;">
+            <h4>Magnezyum Taurat</h4>
+            <ul>
+              <li>Kalp ritmi ve kan basıncının sağlıklı seyrine destek sağlar</li>
+              <li>Sinir sistemi gevşemesine katkı sağlayabilir</li>
+              <li>Organik yapısıyla yüksek bağırsak emilimine olanak tanır</li>
+              <li>Bağırsak sağlığı ve sindirim desteği sağlayabilir</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-front">
+            <div class="fc-icon" style="--fc-color:#E8621A;"><i class="fa-solid fa-fire-flame-curved"></i></div>
+            <div class="fc-mg">10 mg</div>
+            <h4>Mg Sitrat</h4>
+            <p>Enerji &amp; sindirim</p>
+            <span class="fc-hint"><i class="fa-solid fa-hand-pointer"></i> Detay</span>
+          </div>
+          <div class="flip-back" style="--fc-color:#E8621A;">
+            <h4>Magnezyum Sitrat</h4>
+            <ul>
+              <li>Enerji metabolizmasının desteklenmesine katkı sağlar</li>
+              <li>Bağırsak düzenliliğine ve sindirim rahatlığına destek olur</li>
+              <li>İnorganik Mg formlarına kıyasla daha iyi emilim profili sunar</li>
+              <li>Kas kramplarının azalmasına destek sağlayabilir</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-front">
+            <div class="fc-icon" style="--fc-color:#F0B429;"><i class="fa-solid fa-bolt"></i></div>
+            <div class="fc-mg">10 mg</div>
+            <h4>Mg Malat</h4>
+            <p>ATP enerji üretimi</p>
+            <span class="fc-hint"><i class="fa-solid fa-hand-pointer"></i> Detay</span>
+          </div>
+          <div class="flip-back" style="--fc-color:#F0B429;">
+            <h4>Magnezyum Malat</h4>
+            <ul>
+              <li>Malik asit ile birlikte hücresel ATP üretimine destek sağlar</li>
+              <li>Yorgunluk ve enerji düşüklüğünün azalmasına katkı sağlayabilir</li>
+              <li>Kas ağrısı olan bireyler için destek sağlayabilir</li>
+              <li>Yüksek bağırsak emilimine olanak tanıyan organik yapı</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-front">
+            <div class="fc-icon" style="--fc-color:#3DAA70;"><i class="fa-solid fa-dna"></i></div>
+            <div class="fc-mg">10 mg</div>
+            <h4>B6 Vitamini (P5P)</h4>
+            <p>Nörotransmitter sentezi</p>
+            <span class="fc-hint"><i class="fa-solid fa-hand-pointer"></i> Detay</span>
+          </div>
+          <div class="flip-back" style="--fc-color:#3DAA70;">
+            <h4>Aktif Vitamin B6 (P5P)</h4>
+            <ul>
+              <li>Nörotransmitter (GABA, serotonin, dopamin) sentezine destek sağlar</li>
+              <li>Sinir sistemi sağlığının korunmasına katkı sağlar</li>
+              <li>PMS semptomlarının hafiflemesine destek olabilir</li>
+              <li>Biyoaktif formu sayesinde vücut tarafından doğrudan kullanılır</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-front">
+            <div class="fc-icon" style="--fc-color:#0B1D4A;"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="fc-mg">10 mg</div>
+            <h4>Çinko Pikolinat</h4>
+            <p>Emilim güçlendirici</p>
+            <span class="fc-hint"><i class="fa-solid fa-hand-pointer"></i> Detay</span>
+          </div>
+          <div class="flip-back" style="--fc-color:#0B1D4A;">
+            <h4>Çinko Pikolinat</h4>
+            <ul>
+              <li>Magnezyum emilimini sinerjik olarak desteklemeye katkı sağlar</li>
+              <li>Antioksidan savunma mekanizmalarına destek olur</li>
+              <li>Hormon üretimi ve dengesinin sürdürülmesine yardımcı olabilir</li>
+              <li>Doku onarım süreçlerine katkı sağlayabilir</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="pview" id="pview-referanslar" role="region" aria-label="Bilimsel Referanslar">
+  <div class="pview-topbar">
+    <div class="pview-topbar-left">
+      <button class="pview-back" onclick="closeProdView()" aria-label="Geri dön">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Geri</span>
+      </button>
+      <span class="pview-breadcrumb">Pharmas Sağlık / <strong>Bilimsel Referanslar</strong></span>
+    </div>
+    <button class="pview-close" onclick="closeProdView()" aria-label="Kapat">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div class="pview-body">
+    <div class="container">
+      <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Bilimsel Dayanak</span>
+        <h2>Araştırmalar Ne Diyor?</h2>
+        <p>Formülümüzdeki her bileşen, hakemli bilimsel yayınlarla desteklenmektedir.</p>
+      </div>
+      <div class="ref-grid">
+
+        <div class="ref-card">
+          <div class="ref-icon" style="--rc:#3DAA70;"><i class="fa-solid fa-brain"></i></div>
+          <div class="ref-body">
+            <span class="ref-ingredient">Magnezyum Bisglisinat</span>
+            <p class="ref-title">"The Effects of Magnesium Supplementation on Subjective Anxiety and Stress"</p>
+            <span class="ref-cite">Boyle NB et al. — <em>Nutrients</em>, 2017; 9(5):429</span>
+          </div>
+        </div>
+
+        <div class="ref-card">
+          <div class="ref-icon" style="--rc:#5B6EF5;"><i class="fa-solid fa-lightbulb"></i></div>
+          <div class="ref-body">
+            <span class="ref-ingredient">Magnezyum L-Treonat</span>
+            <p class="ref-title">"Enhancement of Learning and Memory by Elevating Brain Magnesium"</p>
+            <span class="ref-cite">Slutsky I et al. — <em>Neuron</em>, 2010; 65(2):165-177</span>
+          </div>
+        </div>
+
+        <div class="ref-card">
+          <div class="ref-icon" style="--rc:#E84D6D;"><i class="fa-solid fa-heart-pulse"></i></div>
+          <div class="ref-body">
+            <span class="ref-ingredient">Magnezyum Taurat</span>
+            <p class="ref-title">"Magnesium and cardiovascular system"</p>
+            <span class="ref-cite">Shechter M. — <em>Magnesium Research</em>, 2010; 23(2):60-72</span>
+          </div>
+        </div>
+
+        <div class="ref-card">
+          <div class="ref-icon" style="--rc:#E8621A;"><i class="fa-solid fa-fire-flame-curved"></i></div>
+          <div class="ref-body">
+            <span class="ref-ingredient">Magnezyum Sitrat</span>
+            <p class="ref-title">"Mg citrate found more bioavailable than other Mg preparations"</p>
+            <span class="ref-cite">Walker AF et al. — <em>Magnesium Research</em>, 2003; 16(3):183-191</span>
+          </div>
+        </div>
+
+        <div class="ref-card">
+          <div class="ref-icon" style="--rc:#F0B429;"><i class="fa-solid fa-bolt"></i></div>
+          <div class="ref-body">
+            <span class="ref-ingredient">Magnezyum Malat</span>
+            <p class="ref-title">"Treatment of fibromyalgia syndrome with Super Malic: a randomized double blind placebo controlled crossover pilot study"</p>
+            <span class="ref-cite">Russell IJ et al. — <em>J Rheumatol</em>, 1995; 22(5):953-958</span>
+          </div>
+        </div>
+
+        <div class="ref-card">
+          <div class="ref-icon" style="--rc:#3DAA70;"><i class="fa-solid fa-dna"></i></div>
+          <div class="ref-body">
+            <span class="ref-ingredient">Aktif B6 Vitamini (P5P)</span>
+            <p class="ref-title">"Non-nutritional uses of vitamin B6"</p>
+            <span class="ref-cite">Bender DA. — <em>British Journal of Nutrition</em>, 1999; 81(1):7-20</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="pview" id="pview-drcaps" role="region" aria-label="DRcaps Teknolojisi">
+  <div class="pview-topbar">
+    <div class="pview-topbar-left">
+      <button class="pview-back" onclick="closeProdView()" aria-label="Geri dön">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Geri</span>
+      </button>
+      <span class="pview-breadcrumb">Pharmas Sağlık / <strong>DRcaps Teknolojisi</strong></span>
+    </div>
+    <button class="pview-close" onclick="closeProdView()" aria-label="Kapat">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div class="pview-body">
+    <div class="drcaps-pview-wrap">
+    <div class="container">
+      <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Capsugel® DRcaps® Teknolojisi</span>
+        <h2>Bitkisel Kapsül Farkı</h2>
+        <p>Kimyasal enterik film kaplama olmadan mide asidine doğal direnç — bağırsakta maksimum çözünme ve emilim.</p>
+      </div>
+
+      <div class="drcaps-grid">
+        <div class="drcaps-card">
+          <i class="fa-solid fa-shield-halved"></i>
+          <h4>Mide Asidine Yüksek Direnç</h4>
+          <p>Kimyasal film kaplama gerektirmeden mide ortamında bütünlüğünü korur. Düşük pH koşullarına duyarlı maddeleri en etkili şekilde korur.</p>
+        </div>
+        <div class="drcaps-card">
+          <i class="fa-solid fa-seedling"></i>
+          <h4>%100 Bitkisel Kökenli</h4>
+          <p>HPMC bazlı bitkisel kapsül. GDO, gluten, nişasta ve koruyucu içermez. Vegetarian Society tarafından onaylıdır.</p>
+        </div>
+        <div class="drcaps-card">
+          <i class="fa-solid fa-arrows-to-dot"></i>
+          <h4>Bağırsakta Hedefli Salınım</h4>
+          <p>Hassas içerikleri ince bağırsakta serbest bırakır. Gecikmeli salınım sayesinde reflü riskini en aza indirir, tat ve kokuyu maskeler.</p>
+        </div>
+        <div class="drcaps-card">
+          <i class="fa-solid fa-temperature-low"></i>
+          <h4>Zorlu Koşullara Dayanıklı</h4>
+          <p>Fiziksel olarak kararlı polimer yapısı, zorlu ısı ve nem koşullarına dayanıklıdır. Neme duyarlı bileşenler için ideal düşük nem içeriğine sahiptir.</p>
+        </div>
+        <div class="drcaps-card">
+          <i class="fa-solid fa-award"></i>
+          <h4>Kosher & Helal Sertifikalı</h4>
+          <p>Kosher (OU ve Ko) ve Helal (IFANCA) sertifikasına sahiptir. Kimyasal bileşen içermez, enterik film kaplı değildir.</p>
+        </div>
+        <div class="drcaps-card">
+          <i class="fa-solid fa-tag"></i>
+          <h4>Clean Label Ürün</h4>
+          <p>Tablet üretiminde kullanılan katkı maddelerine olan gereksinimi ortadan kaldıran en sade ve temiz etiket alternatif.</p>
+        </div>
+      </div>
+
+      <div class="drcaps-certifications">
+        <div class="drcaps-cert-tag"><i class="fa-solid fa-check"></i> GDO İçermez</div>
+        <div class="drcaps-cert-tag"><i class="fa-solid fa-check"></i> Gluten İçermez</div>
+        <div class="drcaps-cert-tag"><i class="fa-solid fa-check"></i> Nişasta İçermez</div>
+        <div class="drcaps-cert-tag"><i class="fa-solid fa-check"></i> Kosher Sertifikalı</div>
+        <div class="drcaps-cert-tag"><i class="fa-solid fa-check"></i> Helal Sertifikalı</div>
+        <div class="drcaps-cert-tag"><i class="fa-solid fa-check"></i> Vegetarian Society Onaylı</div>
+        <div class="drcaps-cert-tag"><i class="fa-solid fa-check"></i> Enterik Film Kaplı Değil</div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="pview" id="pview-karsilastirma" role="region" aria-label="Karşılaştırma">
+  <div class="pview-topbar">
+    <div class="pview-topbar-left">
+      <button class="pview-back" onclick="closeProdView()" aria-label="Geri dön">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Geri</span>
+      </button>
+      <span class="pview-breadcrumb">Pharmas Sağlık / <strong>Karşılaştırma</strong></span>
+    </div>
+    <button class="pview-close" onclick="closeProdView()" aria-label="Kapat">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div class="pview-body">
+    <div class="container">
+      <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Neden Farklıyız?</span>
+        <h2>Magnesium Duodenal 5 vs Diğer Magnezyumlar</h2>
+        <p>Sıradan bir magnezyum takviyesinden farkı — rakamlarla ve net şekilde.</p>
+      </div>
+      <div class="comparison-wrap">
+        <table class="comp-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th class="col-ours"><i class="fa-solid fa-star" style="color:#F0B429;margin-right:8px;"></i>Magnesium Duodenal 5</th>
+              <th class="col-others">Diğer Magnezyumlar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Magnezyum form sayısı</td>
+              <td class="col-ours"><i class="fa-solid fa-circle-check yes-icon"></i> 5 Aktif Mg. formu</td>
+              <td class="col-others"><i class="fa-solid fa-circle-xmark no-icon"></i> Maks. 4 form</td>
+            </tr>
+            <tr>
+              <td>Elementel Magnezyum İçeriği</td>
+              <td class="col-ours"><i class="fa-solid fa-circle-check yes-icon"></i> 190 mg / kapsül</td>
+              <td class="col-others"><i class="fa-solid fa-circle-xmark no-icon"></i> Genellikle 100 mg</td>
+            </tr>
+            <tr>
+              <td>Kullanım süresi / adet</td>
+              <td class="col-ours"><i class="fa-solid fa-circle-check yes-icon"></i> 90 kapsül — 3 aylık</td>
+              <td class="col-others"><i class="fa-solid fa-circle-xmark no-icon"></i> 30 tablet — 1 aylık</td>
+            </tr>
+            <tr>
+              <td>Kapsül teknolojisi</td>
+              <td class="col-ours"><i class="fa-solid fa-circle-check yes-icon"></i> Bitkisel DRcaps®</td>
+              <td class="col-others"><i class="fa-solid fa-circle-xmark no-icon"></i> Standart tablet form</td>
+            </tr>
+            <tr>
+              <td>Aktif B6 (P5P) + Çinko Pikolinat</td>
+              <td class="col-ours"><i class="fa-solid fa-circle-check yes-icon"></i> Mevcut</td>
+              <td class="col-others"><i class="fa-solid fa-circle-xmark no-icon"></i> Genellikle yok</td>
+            </tr>
+            <tr>
+              <td>Koruyucu / katkı maddesi</td>
+              <td class="col-ours"><i class="fa-solid fa-circle-check yes-icon"></i> İçermez</td>
+              <td class="col-others"><i class="fa-solid fa-circle-xmark no-icon"></i> İçerebilir</td>
+            </tr>
+            <tr>
+              <td>Titanyum / Silikon Dioksit</td>
+              <td class="col-ours"><i class="fa-solid fa-circle-check yes-icon"></i> İçermez</td>
+              <td class="col-others"><i class="fa-solid fa-circle-xmark no-icon"></i> Sıklıkla içerir</td>
+            </tr>
+            <tr>
+              <td>Hijyenik blister ambalaj</td>
+              <td class="col-ours"><i class="fa-solid fa-circle-check yes-icon"></i> Blister kapsül</td>
+              <td class="col-others"><i class="fa-solid fa-circle-xmark no-icon"></i> Genellikle şişe</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="pview" id="pview-sertifikalar" role="region" aria-label="Sertifikalar">
+  <div class="pview-topbar">
+    <div class="pview-topbar-left">
+      <button class="pview-back" onclick="closeProdView()" aria-label="Geri dön">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Geri</span>
+      </button>
+      <span class="pview-breadcrumb">Pharmas Sağlık / <strong>Sertifikalar</strong></span>
+    </div>
+    <button class="pview-close" onclick="closeProdView()" aria-label="Kapat">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div class="pview-body">
+    <div class="container">
+      <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Kalite Güvencesi</span>
+        <h2>Sertifikalar</h2>
+        <p>Uluslararası standartlara uygun, bağımsız kuruluşlar tarafından denetlenen üretim tesisleri.</p>
+      </div>
+
+      <div class="cert-badges-grid">
+        <div class="cert-badge-item">
+          <img src="images/certs/iso-9001.svg" alt="ISO 9001" class="cert-badge-img" />
+          <span class="cert-badge-name">ISO 9001</span>
+          <span class="cert-badge-desc">Kalite Yönetim Sistemi</span>
+        </div>
+        <div class="cert-badge-item">
+          <img src="images/certs/iso-14001.svg" alt="ISO 14001" class="cert-badge-img" />
+          <span class="cert-badge-name">ISO 14001</span>
+          <span class="cert-badge-desc">Çevre Yönetim Sistemi</span>
+        </div>
+        <div class="cert-badge-item">
+          <img src="images/certs/iso-45001.svg" alt="ISO 45001" class="cert-badge-img" />
+          <span class="cert-badge-name">ISO 45001</span>
+          <span class="cert-badge-desc">İş Sağlığı & Güvenliği</span>
+        </div>
+        <div class="cert-badge-item">
+          <img src="images/certs/iso-22000.svg" alt="ISO 22000" class="cert-badge-img" />
+          <span class="cert-badge-name">ISO 22000</span>
+          <span class="cert-badge-desc">Gıda Güvenliği Yönetimi</span>
+        </div>
+        <div class="cert-badge-item">
+          <img src="images/certs/helal.svg" alt="Helal Sertifikası" class="cert-badge-img" />
+          <span class="cert-badge-name">Helal Sertifikalı</span>
+          <span class="cert-badge-desc">IFANCA Onaylı</span>
+        </div>
+        <div class="cert-badge-item">
+          <img src="images/certs/gmp.svg" alt="GMP Premium" class="cert-badge-img" />
+          <span class="cert-badge-name">GMP Premium</span>
+          <span class="cert-badge-desc">İyi Üretim Uygulamaları</span>
+        </div>
+        <div class="cert-badge-item">
+          <img src="images/certs/vegan.svg" alt="Vegan" class="cert-badge-img" />
+          <span class="cert-badge-name">Vegan</span>
+          <span class="cert-badge-desc">Bitkisel İçerik</span>
+        </div>
+      </div>
+
+      <div class="free-tags-row">
+        <div class="free-tag"><i class="fa-solid fa-circle-xmark"></i> Paraben İçermez</div>
+        <div class="free-tag"><i class="fa-solid fa-circle-xmark"></i> Sülfat İçermez</div>
+        <div class="free-tag"><i class="fa-solid fa-circle-xmark"></i> Fosfat İçermez</div>
+        <div class="free-tag"><i class="fa-solid fa-paw"></i> Hayvansever Üretim</div>
+        <div class="free-tag"><i class="fa-solid fa-leaf"></i> Vegan</div>
+        <div class="free-tag"><i class="fa-solid fa-recycle"></i> Geri Dönüştürülebilir</div>
+      </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+<!-- ========== /PRODUCT VIEW PANELS ========== -->
+
+</body>
+</html>
