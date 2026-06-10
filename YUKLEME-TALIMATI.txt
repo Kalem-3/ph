@@ -1,0 +1,15 @@
+PHARMAS HEALTH — KOLAY YÜKLEME
+
+Bu sürümde CSS, JavaScript ve görseller index.html dosyasının içine gömülüdür.
+Bu nedenle css, js veya images klasörü yüklemenize gerek yoktur.
+
+GitHub repository ana dizinine şu dosyaları yükleyin:
+- index.html
+- gizlilik-kvkk.html
+- mesafeli-satis-sozlesmesi.html
+- teslimat-iade.html
+
+Mevcut index.html dosyasını mutlaka bu yeni index.html ile değiştirin.
+GitHub Pages kaynağı main / root olmalıdır.
+
+Not: index.html yaklaşık 13 MB olabilir; bu normaldir çünkü tüm tasarım ve görseller tek dosyaya gömülmüştür.
